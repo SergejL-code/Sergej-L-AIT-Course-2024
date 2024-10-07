@@ -16,9 +16,9 @@ public class ShopApplA {
         ComputerA computer_1 = new ComputerA("i7", 8, 256, "Acer", 845.25);
         System.out.println(computer_1);
 
-        LaptopA laptop_1 = new LaptopA("M2", 8, 512, "Apple AirBook", 2200, 14, 2.5, 10, "black");
+        LaptopA laptop_1 = new LaptopA("M2", 8, 512, "Apple AirBook", 2200);
         System.out.println(laptop_1);
-        Smartphone smartphone_1 = new Smartphone("Google Tensor G4", 12, 128, "Google", 799, 5, 45, 30, "red", 543131341);
+        Smartphone smartphone_1 = new Smartphone("Google Tensor G4", 12, 128, "Google", 799,546466555 );
         System.out.println(smartphone_1);
 
 

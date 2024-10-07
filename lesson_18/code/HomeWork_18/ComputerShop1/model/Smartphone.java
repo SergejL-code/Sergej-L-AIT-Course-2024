@@ -1,14 +1,17 @@
 package HomeWork_18.ComputerShop1.model;
 
 public class Smartphone extends LaptopA {
+    //fields
     private long imei;
+//constructor
 
-    public Smartphone(String cpuName, int ram, int ssd, String brand, double price, double displaySize, double weight, int batteryLife, String color, long imei) {
-        super(cpuName, ram, ssd, brand, price, displaySize, weight, batteryLife, color);
+
+    public Smartphone(String cpuName, int ram, int ssd, String brand, double price, long imei) {
+        super(cpuName, ram, ssd, brand, price);
         this.imei = imei;
-
     }
 
+//Getters and Setters
     public long getImei() {
         return imei;
     }

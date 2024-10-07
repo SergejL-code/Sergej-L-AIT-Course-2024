@@ -54,4 +54,12 @@ public class Book_1 {
                 ", yearOfPublishing=" + yearOfPublishing +
                 '}';
     }
+    public void display() {
+        System.out.println("Book_1{" +
+                "author='" + author + '\'' +
+                ", isbn_Number='" + isbn_Number + '\'' +
+                ", title='" + title + '\'' +
+                ", yearOfPublishing=" + yearOfPublishing + '}');
+    }
+
 }//end of class

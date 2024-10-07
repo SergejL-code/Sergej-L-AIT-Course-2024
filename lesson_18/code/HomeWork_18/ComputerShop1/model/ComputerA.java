@@ -1,13 +1,13 @@
 package HomeWork_18.ComputerShop1.model;
 
 public class ComputerA {
-
+//fields
   private String cpuName;
   private int ram;
   private int ssd;
   private String brand;
   private double price;
-
+// constructor
   public ComputerA(String cpuName, int ram, int ssd, String brand, double price) {
     this.cpuName = cpuName;
     this.ram = ram;
@@ -16,6 +16,7 @@ public class ComputerA {
     this.price = price;
 
   }
+  //Getters and Setters
   public String getCpuName() {
     return cpuName;
   }
@@ -46,6 +47,8 @@ public class ComputerA {
   public void setPrice(double price) {
     this.price = price;
   }
+
+
   @Override
   public String toString() {
     return "ComputerA{" +

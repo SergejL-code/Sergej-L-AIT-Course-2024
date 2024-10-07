@@ -1,20 +1,22 @@
 package HomeWork_18.ComputerShop1.model;
 
 public class LaptopA extends ComputerA{
+//fields
 
 private double displaySize;
 private  double weight;
 private int batteryLife;
 private String color;
 
-    public LaptopA(String cpuName, int ram, int ssd, String brand, double price, double displaySize, double weight, int batteryLife, String color) {
+//constructor
+    public LaptopA(String cpuName, int ram, int ssd, String brand, double price) {
         super(cpuName, ram, ssd, brand, price);
         this.displaySize = displaySize;
         this.weight = weight;
         this.batteryLife = batteryLife;
         this.color = color;
     }
-
+//Getters and Setters
     public double getDisplaySize() {
         return displaySize;
     }

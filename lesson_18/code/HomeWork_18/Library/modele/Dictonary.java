@@ -42,6 +42,8 @@ public class Dictonary extends Book_1 {
                 "content='" + content + '\'' +
                 ", languageType='" + languageType + '\'' +
                 ", formOfPresentation='" + formOfPresentation + '\'' +
-                "} " + super.toString();
+                '}';
     }
+
+
 }
