@@ -1,5 +1,7 @@
 package HomeWork_18.Library.modele;
 
+/*Create or take from a previous homework a Book class with fields: title - title author year of publication - year unique number - ISBN In the Book class, implement a constructor, getters and setters for all fields and display method, which displays information about the book. Create a Dictionary class that extends the Book class. Provide a set of fields for it and override the display method. In the BookAppl class, in the main method, create several dictionaries and display information about them to the console.*/
+
 public class Book_1Appl {
     public static void main(String[] args) {
 
