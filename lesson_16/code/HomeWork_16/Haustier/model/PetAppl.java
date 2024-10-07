@@ -22,7 +22,7 @@ public class PetAppl {
         System.out.println(tier_6);
         System.out.println("---------------------------------------------------------");
 
-// coll of Methods actions for animals
+// call of Methods actions for animals
 
             tier_1.sleep();
             tier_2.play();

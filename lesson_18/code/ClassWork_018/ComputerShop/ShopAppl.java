@@ -18,13 +18,13 @@ public class ShopAppl {
         Laptop laptop_1 = new Laptop("M2", 8, 512, "Apple AirBook", 2200, 14, 2.5, 10, "black");
         System.out.println(laptop_1);
 
-        Computer[] computers = new Computer[5];
+        Computer[] computers = new Computer[7];
         computers[0] = new Computer("i7", 8, 256, "Acer", 845.25);
         computers[1] = new Computer("i5", 16, 512, "ASus", 1155);
         computers[2] = new Computer("AMD", 8, 256, "Acer", 845.25);
         computers[3] = new Laptop("M2", 8, 256, "MacBook", 2545.4, 14, 1.22, 10, "weiss");
         computers[4] = new Laptop("I9", 8, 1024, "Asus", 1000, 17, 1.6, 12, "silber");
-
+//computers[5]=new Smartphone();
         int totalSsd = 0;
         for (int i = 0; i < computers.length; i++) {
             totalSsd += computers[i].getSsd();
