@@ -1,9 +1,10 @@
 package HomeWork_18.ComputerShop1;
 
 
-/*  In class work, create a Smartphone class that extends the Laptop class with a private long imei field.
-In the Smartphone class, override the toString method.
-In the main method, add the Smartphone object and print it to the console.*/
+/*  In class work, create a Smartphone_2 class that extends the Laptop_2 class with a private long imei field.
+In the Smartphone_2 class, override the toString method.
+In the main method, add the Smartphone_2 object and print it to the console.
+Найти общий вес всех мобильных устройств в ComputerShop.*/
 
 
 import HomeWork_18.ComputerShop1.model.ComputerA;

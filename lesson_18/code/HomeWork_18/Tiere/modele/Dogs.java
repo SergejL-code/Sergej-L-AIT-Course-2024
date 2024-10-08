@@ -1,7 +1,7 @@
 package HomeWork_18.Tiere.modele;
+public class Dogs extends Cats {
 
 //fields
-public class Dogs extends Cats {
 
     //Constructor
 

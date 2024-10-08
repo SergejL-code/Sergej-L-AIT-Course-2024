@@ -22,7 +22,7 @@ public class Smartphone extends LaptopA {
 
     @Override
     public String toString() {
-        return "Smartphone{" +
+        return "Smartphone_2{" +
                 "imei=" + imei +
                 "} " + super.toString();
     }

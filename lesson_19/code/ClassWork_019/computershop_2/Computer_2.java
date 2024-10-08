@@ -1,6 +1,6 @@
-package ClassWork_018.ComputerShop.model;
+package ClassWork_019.computershop_2;
 
-public class Computer {
+public class Computer_2 {
 
   private String cpuName;
   private int ram;
@@ -8,7 +8,7 @@ public class Computer {
   private String brand;
   private double price;
 
-  public Computer(String cpuName, int ram, int ssd, String brand, double price) {
+  public Computer_2(String cpuName, int ram, int ssd, String brand, double price) {
     this.cpuName = cpuName;
     this.ram = ram;
     this.ssd = ssd;
