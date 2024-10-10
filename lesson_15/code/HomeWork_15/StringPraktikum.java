@@ -53,4 +53,5 @@ public class StringPraktikum {
 
 
     }//end of main
+
 }// end of class
