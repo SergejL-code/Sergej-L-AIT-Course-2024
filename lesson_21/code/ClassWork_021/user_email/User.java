@@ -1,4 +1,4 @@
-package ClassWork_021.user;
+package ClassWork_021.user_email;
 
 public class User {
     private String email;

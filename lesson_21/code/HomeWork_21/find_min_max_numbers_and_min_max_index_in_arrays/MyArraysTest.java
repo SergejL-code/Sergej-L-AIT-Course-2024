@@ -47,4 +47,4 @@ class MyArraysTest {
         int actual = myArrays.sucheMaxIndex(musterArrays);
         assertEquals(expected, actual);
     }
-}
+}//end of class

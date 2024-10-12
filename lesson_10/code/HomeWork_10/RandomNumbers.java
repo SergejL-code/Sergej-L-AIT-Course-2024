@@ -15,10 +15,16 @@ public class RandomNumbers {
             System.out.print(numbers[i] + " ");
         }
         System.out.println();
-        for (int i = 0; i < numbers.length; i++) {
+      /*  for (int i = 0; i < numbers.length; i++) {
             numbers[19] = 10;
             numbers[0] = 14;
             System.out.print(numbers[i] + " ");
+        }*/
+        int temp = numbers[0];
+        numbers[0]=numbers[numbers.length-1];
+        numbers[numbers.length-1] = temp;
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]+  " ");
         }
     }//end of main
 }//end of class

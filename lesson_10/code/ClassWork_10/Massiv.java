@@ -10,7 +10,7 @@ public class Massiv {
         //numbers.length = 20
         //numbers[numbers. length - 1]
 
-        //fiil in
+        //fiel in
         for (int i = 0; i < numbers.length; i++) {  //index = 0
             numbers[i] = i+1;
             System.out.print(numbers[i] + " ");

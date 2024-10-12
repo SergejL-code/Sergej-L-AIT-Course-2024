@@ -1,5 +1,6 @@
-package ClassWork_021.user;
+package ClassWork_021.user_email;
 
+import ClassWork_022.user1Password.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
