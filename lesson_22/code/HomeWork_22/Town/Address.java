@@ -7,23 +7,27 @@ package HomeWork_22.Town;
 
 public class Address {
     //fields
-    String town;
-    String townIndex;
+    private String town;
+    private String townIndex;
 
     //Methode
     //constructor
     public Address(String town, String townIndex) {
-        this.town = town;
-        this.townIndex = townIndex;
+        setTown(town);
+        setTownIndex(townIndex);
     }
-
     //Getter and Setter
     public String getTown() {
         return town;
     }
 
     public void setTown(String town) {
-        this.town = town;
+
+        if (isTownName(town)) {
+            this.town = town;
+        } else {
+            System.out.println(town + " city not found. ");
+        }
     }
 
     public String getTownIndex() {
@@ -31,7 +35,12 @@ public class Address {
     }
 
     public void setTownIndex(String townIndex) {
-        this.townIndex = townIndex;
+        if (isTownIndex(townIndex)) {
+            this.townIndex = townIndex;
+        } else {
+            System.out.println(townIndex + " index is wrong.");
+        }
+
     }
 
     //displaing
@@ -43,22 +52,30 @@ public class Address {
                 '}';
     }
 
-    private boolean town(String town,String townIndex) {
-        boolean[] res = new boolean[3];
-        for (int i = 0; i < town.length(); i++) {
-            char ch = town.charAt(i);
-            if (town == null || town.isEmpty()) {
-                res[0] = false;
-            }
-            if (Character.isUpperCase(town.charAt(0))) {
-                res[1] = true;
-            }
-            if (townIndex.length() >= 5) {
-                res[2] = true;
-            }
-        }//end of for
-return false;
+    public boolean isTownName(String town) {
+
+        // Check if the string is Empty or null
+        if (town == null || town.isEmpty()) {
+            return false;                                       // Town name cannot be null or empty
+        }
+
+        // Check if town starts with a capital letter
+        if (!Character.isUpperCase(town.charAt(0))) {
+            return false;
+        }
+        return true;
+    }
+
+    public boolean isTownIndex(String townIndex) {
+        // Check length of townIndex( 5 numbers)
+        for (int i = 0; i < townIndex.length(); i++) {
+        if (townIndex.length() != 5)
+            return false;
+        if (!Character.isDigit(townIndex.charAt(i))) {               // Check that all characters in the string are digits
+            return false;}
+
+        }
+
+        return true;
     }//end of Town
-
-
 }//end of class

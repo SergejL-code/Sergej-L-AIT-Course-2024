@@ -33,17 +33,36 @@ final String password = "123456Az!";//ideal password
     void setEmailNotLettes(){
         String email = "peter@mai.de";//wrong email Неправильный email (неправильный домен)
         user.setEmail(email);// Пытаемся установить неправильный email
-        assertEquals("peter@mail.de",user.getEmail());// Проверяем, что email не изменился
+        assertEquals(email,user.getEmail());// Проверяем, что email не изменился
     }
+    //test failed
     @Test
-    void setEmailNotEmail(){
-        String email = "peter@mail..de";
-        user.setEmail(email);
+    void setEmailTwoDotsEmail(){ // two Dots after @
+
+        user.setEmail("peter@mail..de");
         assertEquals("peter@mail..de",user.getEmail());
     }
+    @Test
+    void setEmailnotEmail(){
+        user.setEmail("");
+        assertEquals(email,user.getEmail());
+    }
+    //test failed
+    @Test
+    void setEmailDotInBeginn(){
+        user.setEmail(".peter@mail.de");
+        assertEquals(".peter@mail.de",user.getEmail());
+    }
+    //test failed
+    @Test
+    void setEmailDotInTheMiddleOfName(){
+        user.setEmail("pet.er@mail.de");
+        assertEquals("pet.er@mail.de",user.getEmail());
+    }
+
 
     @Test
     void setPassword() {
 
     }
-}
+}//end of class

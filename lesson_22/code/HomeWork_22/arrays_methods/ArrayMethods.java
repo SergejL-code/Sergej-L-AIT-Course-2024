@@ -12,7 +12,7 @@ public class ArrayMethods {
     //conctructor
     public ArrayMethods(int[] arrray) {
 
-        this.arrray =  new int[]{1, 4, 1, 5, -5, 4, 2, 5};
+        this.arrray = arrray;
     }
 
     public int[] getArrray() {
@@ -32,8 +32,8 @@ public class ArrayMethods {
 
     public static int sumOfAllElementsWithOddIndex(int[] arrray) {
         int sum = 0;
-        for (int i = 1; i < arrray.length; i += 2) {//увеличили счетчик на 2 на проходе
-            sum += arrray[i];//Добавляем элемент с нечетным индексом
+        for (int i = 1; i < arrray.length; i += 2) {//increased the counter by two on the aisle
+            sum += arrray[i];//Add an element with an odd index
         }
         return sum;
 
@@ -42,9 +42,9 @@ public class ArrayMethods {
 
     public static int searchInArray(int[] array) {
         if (array.length >= 5) {
-            return array[4];// Возвращаем 5-й элемент (индекс 4)
+            return array[4];//Return the 5th element (index 4)
         } else {
-            return -1;// Возвращаем -1, если элементов меньше 5
+            return -1;// Return -1 if the elements are less than 5
         }//end of else
     }//end of searchInArray
 

@@ -36,7 +36,7 @@ static void stableSelectionSort(int[] a, int n) {// This code is contributed by 
 
 
     //======================================================================================================
-    // method swap
+    // method swap/ Метод для обмена значениями двух элементов массива
     public static void swap_1(int[] array, int a, int b) {
         int temp = array[a];
         array[a] = array[b];
