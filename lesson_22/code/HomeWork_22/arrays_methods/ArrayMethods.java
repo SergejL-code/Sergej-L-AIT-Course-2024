@@ -8,28 +8,24 @@ public class ArrayMethods {
 
     int[] arrray;
 
-
     //conctructor
+
     public ArrayMethods(int[] arrray) {
 
         this.arrray = arrray;
     }
-
     public int[] getArrray() {
         return arrray;
     }
-
     public void setArrray(int[] arrray) {
         this.arrray = arrray;
     }
-
     @Override
     public String toString() {
         return "ArrayMethods{" +
                 "arrray=" + Arrays.toString(arrray) +
                 '}';
     }
-
     public static int sumOfAllElementsWithOddIndex(int[] arrray) {
         int sum = 0;
         for (int i = 1; i < arrray.length; i += 2) {//increased the counter by two on the aisle
@@ -38,8 +34,6 @@ public class ArrayMethods {
         return sum;
 
     }//end of sumOfAllElementsWithOddIndex
-
-
     public static int searchInArray(int[] array) {
         if (array.length >= 5) {
             return array[4];//Return the 5th element (index 4)

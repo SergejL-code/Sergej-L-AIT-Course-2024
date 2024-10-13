@@ -20,7 +20,6 @@ public class Address {
     public String getTown() {
         return town;
     }
-
     public void setTown(String town) {
 
         if (isTownName(town)) {
@@ -33,7 +32,6 @@ public class Address {
     public String getTownIndex() {
         return townIndex;
     }
-
     public void setTownIndex(String townIndex) {
         if (isTownIndex(townIndex)) {
             this.townIndex = townIndex;
@@ -75,7 +73,6 @@ public class Address {
             return false;}
 
         }
-
         return true;
     }//end of Town
 }//end of class
