@@ -47,4 +47,4 @@ class AddressTest {
         address.setTownIndex("5222a2");
         assertEquals(postleitzahl,address.getTownIndex());
     }
-}
+}//end of class
