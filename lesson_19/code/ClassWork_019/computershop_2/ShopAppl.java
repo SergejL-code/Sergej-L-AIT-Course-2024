@@ -10,11 +10,11 @@ package ClassWork_019.computershop_2;
 public class ShopAppl {
     public static void main(String[] args) {
 
-        Computer_2 computer_1 = new Computer_2("i7", 8, 256, "Acer", 845.25);
-        System.out.println(computer_1);
+       // Computer_2 computer_1 = new Computer_2("i7", 8, 256, "Acer", 845.25);
+      //System.out.println(computer_1);
 
-        Laptop_2 laptop_1 = new Laptop_2("M2", 8, 512, "Apple AirBook", 2200, 14, 2.5, 10, "black");
-        System.out.println(laptop_1);
+      //  Laptop_2 laptop_1 = new Laptop_2("M2", 8, 512, "Apple AirBook", 2200, 14, 2.5, 10, "black");
+      //  System.out.println(laptop_1);
 
         Computer_2[] computers = new Computer_2[6];// typ Computer_2(это родительский класс
         computers[0] = new Computer_2("i7", 8, 256, "Acer", 845.25);

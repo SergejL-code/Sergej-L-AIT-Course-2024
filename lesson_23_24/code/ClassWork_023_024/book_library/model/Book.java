@@ -1,4 +1,4 @@
-package ClassWork_023.book_library.model;
+package ClassWork_023_024.book_library.model;
 
 /* Создать класс Book с полями:
 // long isbn, String title, String author, int yearOfPublishing.
@@ -46,7 +46,9 @@ public class Book {
         //String.valueOf(isbn).length() == 13;
         /*можно циклом fori так как известно сколько раз он должен отработать*/
         int count = 0;
-        while ((isbn / 10 != 0)) {
+        long temp = isbn;//переложили  isbn , чтобы не испортить значения
+        while (temp != 0) {
+            temp=temp/10;
             count++;
         }
         return count == ISBN_LENGTH;
@@ -61,7 +63,9 @@ public class Book {
 
     //TODO предусмотреть защиту по поводу 13 цифр и в этом случае
     public void setIsbn(long isbn) {
-        this.isbn = isbn;
+        if(checkIsbn(isbn)>0){
+        this.isbn = checkIsbn(isbn);}else {
+        System.out.println("ISBN is incorrect");}
     }
 
     public int getYearOfPublishing() {
