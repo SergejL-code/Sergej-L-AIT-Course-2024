@@ -109,7 +109,7 @@ public class Book {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Books{");
-        sb.append(", title='").append(title).append('\'');
+        sb.append(" title='").append(title).append('\'');
         sb.append("author='").append(author).append('\'');
         sb.append(", isbn=").append(isbn);
         sb.append(", yearOfPublishing=").append(yearOfPublishing);

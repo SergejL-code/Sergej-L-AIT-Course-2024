@@ -96,13 +96,13 @@ public class Dokument {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Dokument{");
-        sb.append("id=").append(id);
-        sb.append(", titel='").append(titel).append('\'');
-        sb.append(", author='").append(author).append('\'');
-        sb.append(", status='").append(status).append('\'');
-        sb.append(", DateOfCreation=").append(DateOfCreation);
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder("Document ");
+        sb.append("id = ").append(id);
+        sb.append("; titel = ").append(titel);
+        sb.append("; author = ").append(author);
+        sb.append("; status = ").append(status);
+        sb.append("; DateOfCreation = ").append(DateOfCreation);
+        sb.append('.');
         return sb.toString();
     }
-}
+}//end of class
