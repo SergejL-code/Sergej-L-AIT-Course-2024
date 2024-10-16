@@ -14,11 +14,11 @@ public class CarChooseOnMinCost {
     public static final int ROUTE = 3000;// km, total distance to designation
 
     //fields
-    String carBrand;
-    String fuelType;
-    double costOfLiter;                    //cost of 1 liter of fuel
-    double consumption;                    // consumption per 100 km
-    int carRental;                         //weekly car rental rate
+    private String carBrand;
+    private String fuelType;
+    private double costOfLiter;                    //cost of 1 liter of fuel
+    private double consumption;                    // consumption per 100 km
+    private int carRental;                         //weekly car rental rate
 
 
     // constructor
@@ -33,10 +33,10 @@ public class CarChooseOnMinCost {
     }
     // Method to calculate the total cost for the trip
 
-   public double totalCost(double costOfLiter,double consumption,int carRental) {
-        double cost = (consumption *ROUTE)/100*costOfLiter; // Calculating fuel cost
+    public double totalCost() {
+        double cost = (consumption * ROUTE) / 100 * costOfLiter; // Calculating fuel cost
 
-        return cost+carRental;                              // Total cost
+        return cost + carRental;                              // Total cost
     }
 
     //Getter and Setter
@@ -104,8 +104,6 @@ public class CarChooseOnMinCost {
         sb.append('}');
         return sb.toString();
     }
-
-
 
 
 }//end of class

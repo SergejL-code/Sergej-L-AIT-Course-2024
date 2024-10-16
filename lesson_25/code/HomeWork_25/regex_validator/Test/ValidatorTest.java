@@ -20,29 +20,49 @@ public class ValidatorTest {
 
     @Test
     void checkDateFormatEU() {
-        assertTrue(Validator.checkDateFormatEU("26.10.2023"));
-        assertTrue(Validator.checkDateFormatEU("05.10.2023"));
-        assertTrue(Validator.checkDateFormatEU("31.02.2023"));
-        assertFalse(Validator.checkDateFormatEU("32.02.2023"));
-        assertFalse(Validator.checkDateFormatEU("15.13.2023"));
-        assertFalse(Validator.checkDateFormatEU("26/02/2023"));
-        assertFalse(Validator.checkDateFormatEU("5.10.2023"));
+        assertTrue(Validator.checkDateFormatEU("26.10.2023"));//
+        assertTrue(Validator.checkDateFormatEU("05.10.2023"));//
+        assertTrue(Validator.checkDateFormatEU("31.02.2023"));//
+        assertFalse(Validator.checkDateFormatEU("32.02.2023"));//  Day not existiert
+        assertFalse(Validator.checkDateFormatEU("15.13.2023"));// Monat not existiert
+        assertFalse(Validator.checkDateFormatEU("26/02/2023"));//
+        assertFalse(Validator.checkDateFormatEU("05.10.2023"));//
     }
 
     @Test
     void checkDateFormatUS() {
-        // TODO Homework test for checkDateFormatUS
+        assertTrue(Validator.checkDateFormatUS("2023-10-26"));
+        assertTrue(Validator.checkDateFormatUS("2023-10-05"));
+        assertTrue(Validator.checkDateFormatUS("2023-02-31"));
+        assertFalse(Validator.checkDateFormatUS("2023-02-32"));
+        assertFalse(Validator.checkDateFormatUS("2023-13-15"));
+        assertTrue(Validator.checkDateFormatUS("2023-02-26"));
+        assertTrue(Validator.checkDateFormatUS("2023-10-05"));
+
+
+    } @Test
+    void checkDateFormatUSVariant_2() {
+        assertFalse(Validator.checkDateFormatUS("10/26/2024"));
+        assertFalse(Validator.checkDateFormatUS("10/05/2024"));
+       // assertFalse(Validator.checkDateFormatUS("02/31/2024"));
+        assertFalse(Validator.checkDateFormatUS("02/32/2024"));
+        assertFalse(Validator.checkDateFormatUS("13/15/2024"));
+       // assertTrue(Validator.checkDateFormatUS("02/26/2024"));
+        assertFalse(Validator.checkDateFormatUS("10/05/2024"));
+
+
     }
 
     @Test
     void checkPhoneNumber() {
         assertTrue(Validator.checkPhoneNumber("+08(01)1234-5678"));
-        assertFalse(Validator.checkPhoneNumber("08(01)1234-5678"));
-        assertFalse(Validator.checkPhoneNumber("+108(01)1234-5678"));
-        assertFalse(Validator.checkPhoneNumber("+8(01)1234-5678"));
-        assertFalse(Validator.checkPhoneNumber("+08(1)1234-5678"));
-        assertFalse(Validator.checkPhoneNumber("+08(01)123-5678"));
-        assertFalse(Validator.checkPhoneNumber("+08(01)1234-56789"));
+
+        assertFalse(Validator.checkPhoneNumber("08(01)1234-5678"));//absent +
+        assertFalse(Validator.checkPhoneNumber("+108(01)1234-5678"));// +108 must +08
+        assertFalse(Validator.checkPhoneNumber("+8(01)1234-5678"));//absent 0
+        assertFalse(Validator.checkPhoneNumber("+08(1)1234-5678"));//absent 0
+        assertFalse(Validator.checkPhoneNumber("+08(01)123-5678"));//absent digit 4
+        assertFalse(Validator.checkPhoneNumber("+08(01)1234-56789"));//too many digits
     }
 
     @Test
@@ -58,4 +78,4 @@ public class ValidatorTest {
     }
 
 
-}
+}//end of class

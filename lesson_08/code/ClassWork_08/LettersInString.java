@@ -1,6 +1,4 @@
-package classwork_08;
-
-//Задача 1.
+package ClassWork_08;
 //Пользователь вводит с клавиатуры строку.
 //Распечатайте каждую букву строки на новой строчке.
 //Используйте методы length и charAt() класса String.
@@ -8,25 +6,23 @@ package classwork_08;
 import java.util.Scanner;
 
 public class LettersInString {
-
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input string: ");
-        String str = scanner.nextLine();
+        String word = scanner.nextLine();
+        System.out.println("");
 
-        System.out.println(str);
-
-        int l = str.length();
+        int l = word.length();
         System.out.println(l);
         int i = 0;
-
-        // leonid
-        // 012345
-
-        while(i < l) {
-            System.out.println(str.charAt(i));
-            i++; // i = i + 1
+        // leonid->
+        // 012345->
+        while (i < l) {
+            System.out.print(word.charAt(i));
+            i++;//i=i+1 or i+=1
         }
+
     }
+
 }
