@@ -28,7 +28,7 @@ public class Validator {
     public static boolean checkDateFormatUS(String str){
 
        //return str.matches("^\\d{4}\\-(0[1-9]|1[0-2])\\-(0[1-9}|[1-2][0-9]|3[0-1])$");
-        return str.matches("\\d{4}\\-(0[1-9]|1[0-2])\\-(0[1-9]|[1-2][0-9]|3[0-1])$");
+         return str.matches("^\\d{4}\\-(0[1-9]|1[0-2])\\-(0[1-9]|[1-2][0-9]|3[0-1])$");
     }
     public static boolean checkDateFormatUSVariant_2(String str){
 

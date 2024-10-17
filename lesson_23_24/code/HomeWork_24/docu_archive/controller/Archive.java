@@ -2,12 +2,13 @@ package HomeWork_24.docu_archive.controller;
 
 import HomeWork_24.docu_archive.model.Dokument;
 
-public class Archive {
+public  class Archive {
 
     //fields
 
     private Dokument[] dokuments;
     private int size;
+
     // constructor
 
     public Archive(int capacity) {
@@ -54,12 +55,9 @@ public class Archive {
                 size--;
                 return victim;
             }
-
         }
         return null;
-
     }
-
     public int size() {
         return size;
     }
