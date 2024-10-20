@@ -11,20 +11,20 @@ public class StringConversions {
         //Create a Scanner object to read user input from the console
 
         Scanner scanner = new Scanner(System.in);
-        // Запрашиваем у пользователя ввести несколько целых чисел в строке
-        // ask the user to enter several integers in a string
+        // Просим у пользователя ввести несколько целых чисел в строке через пробел
+        // ask the user to enter several integers in a string over a space
 
-        System.out.println("Input  multiple integers in a string; ");
+        System.out.println("Input multiple integers in a string over a space ; ");
 
-        // Читаем строку, введённую пользователем nextLine() считывает всю строку целиком
-        //Read a string entered by the user nextLine() reads the entire string
+        // Читаем строку, введённую пользователем
+        //Read a string entered by the user
 
         String numbers = scanner.nextLine();
 
         // Разделяем строку по пробелам, получая массив строк, каждая которых — это одно число
         // Divide the string by spaces, getting an array of strings, each of which is a single number
 
-        String[] strNum = numbers.split(" "); // split(" ") разбивает строку по пробелами возвращает массив строк
+        String[] strNum = numbers.split(" "); // split(" ") разбивает строку по пробелами и возвращает массив строк
                                                 //split(" ") splits the string by space and returns an array of strings
 
             // Инициализируем переменную для хранения суммы чисел
