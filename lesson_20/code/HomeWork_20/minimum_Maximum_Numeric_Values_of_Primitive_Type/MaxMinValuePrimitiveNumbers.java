@@ -35,7 +35,7 @@ public class MaxMinValuePrimitiveNumbers {
                     }
                 }
             }
-        }
+        }//end of main
 
         // Методы для вывода минимальных и максимальных значений примитивных типов
         public static void printByte() {
