@@ -33,8 +33,8 @@ public class MaxMinValuePrimitiveNumbers {
                         // Если аргумент не соответствует ни одному типу
                         System.out.println("Wrong type: " + arg);
                     }
-                }
-            }
+                }//end of for
+            }//end of else
         }//end of main
 
         // Методы для вывода минимальных и максимальных значений примитивных типов
