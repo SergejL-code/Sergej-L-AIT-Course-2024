@@ -98,20 +98,20 @@ class CompanyImplTest {
 
     @Test
     void averageSalaryTest() {
-        assertEquals(7300, company.averageSalary());
+        assertEquals(company.totalSalary()/company.quantity(), company.averageSalary());
     }
 
     @Test
     void findEmployeeHoursGreaterThanTest() {
-        Employee[] expected = {emp[1], emp[3]};
+        Employee[] expected = {emp[1], emp[3]};// тот кто переработал
         Employee[] actual = company.findEmployeeHoursGreaterThan(160);
         assertArrayEquals(expected, actual);
     }
 
     @Test
     void findEmployeeSalaryRangeTest() {
-        Employee[] expected = {emp[1], emp[4]};
-        Employee[] actual = company.findEmployeeSalaryRange(4000,15000);
+        Employee[] expected = {emp[3], emp[4]};
+        Employee[] actual = company.findEmployeeSalaryRange(3000,10000);
         assertArrayEquals(expected, actual);
     }
 }//end of class

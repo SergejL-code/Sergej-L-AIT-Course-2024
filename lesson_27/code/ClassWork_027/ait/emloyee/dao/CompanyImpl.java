@@ -110,8 +110,7 @@ public class CompanyImpl implements Company {
         if (size == 0) {
             return 0;
         }
-        double totalSalary = totalSalary();
-        return totalSalary / size;
+        return totalSalary() / size;
     }
 
     @Override
@@ -125,17 +124,52 @@ public class CompanyImpl implements Company {
         }
         return totalSales;
     }
-//search for employees who have worked more than
+
+    //search for employees who have worked more than
     @Override
     public Employee[] findEmployeeHoursGreaterThan(int hours) {
-        return findEmployeeByPredicate(employee -> employee.getHours() > hours); }
+        return findEmployeeByPredicate(employee -> employee.getHours() > hours);
+    }
 
+    /*count quantity
+       public Employee[] findEmployeeHoursGreaterThan(int hours) {
+        int count = 0;
+        for (int i = 0; i < size; i++) {
+            if(employees[i].getHours() > hours){
+                count++;
+            }
+        }
+        Employee[] res = new Employee[count];
+        // читаем массив и перекладываем рез-ты в новый
+        for (int i = 0, j = 0 ; j < res.length; i++) {
+            if(employees[i].getHours() > hours){
+                res[j++] = employees[i];
+            }
+        }
+        return res;
 
-
+    }*/
     @Override
     public Employee[] findEmployeeSalaryRange(double min, double max) {
-        return findEmployeeByPredicate(employee ->employee.calcSalary()>=min && employee.calcSalary()<=max);
+        return findEmployeeByPredicate(employee -> employee.calcSalary() >= min && employee.calcSalary() <= max);
     }
+    /*
+    public Employee[] findEmployeeSalaryRange(double min, double max) {
+        int count = 0;
+        for (int i = 0; i < size; i++) {
+            if(employees[i].calcSalary() > min && employees[i].calcSalary() < max ){
+                count++;
+            }
+        }
+        Employee[] res = new Employee[count];// new Array for results
+        // читаем массив и перекладываем рез-ты в новый
+        for (int i = 0, j = 0 ; j < res.length; i++) {
+            if(employees[i].calcSalary() > min && employees[i].calcSalary() < max){
+                res[j++] = employees[i];
+            }
+        }
+        return res;
+    }*/
 
     private Employee[] findEmployeeByPredicate(Predicate<Employee> predicate) {
         int count = 0;

@@ -56,7 +56,7 @@ public class GarageImpl implements Garage{
 
     @Override
     public Car[] findCarsByColor(String color) {
-        return new Car[0];
+        return findCarsByPredicate(car -> car.getColor().equals(color));
     }
 
     @Override
