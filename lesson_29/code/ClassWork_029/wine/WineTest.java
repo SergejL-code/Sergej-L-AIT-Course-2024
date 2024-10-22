@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 class WineTest {
     Wine[] wines;
@@ -21,12 +22,27 @@ class WineTest {
     }
 
     @Test
-    void sortWineTest() {
+    void sortWineByAgeTest() {
         System.out.println("=========================List wines as is===================================");
         printWines();//print as is
         Arrays.sort(wines);//sorting
         System.out.println("===================List wines sorted by age============================");
-        printWines();//print
+        printWines();//print by age
+    }
+    @Test
+    void sortWineByPriceTest(){
+        Comparator<Wine>comparatorByPrice = new Comparator<Wine>() {
+            @Override
+            public int compare(Wine w1, Wine w2) {
+          //      return (int) (w1.getPrice()-w2.getPrice());
+                return Double.compare(w1.getPrice(), w2.getPrice());
+            }
+        };
+        System.out.println("=========================List wines as is===================================");
+        printWines();//print as is
+        Arrays.sort(wines,comparatorByPrice);//sorting by Price
+        System.out.println("===================List wines sorted by Price============================");
+        printWines();//print by age
     }
 
     @Test
@@ -34,5 +50,19 @@ class WineTest {
         for (int i = 0; i < wines.length; i++) {
             System.out.println(wines[i]);
         }
+    }
+    @Test
+    void sortWineByTitleTest(){
+        Comparator<Wine>comparatorbyTitle = new Comparator<Wine>() {
+            @Override
+            public int compare(Wine w1, Wine w2) {
+                return w1.getTitel().compareTo(w2.getTitel());
+            }
+        };
+        System.out.println("=========================List wines as is===================================");
+        printWines();//print as is
+        Arrays.sort(wines,comparatorbyTitle);//sorting by Price
+        System.out.println("===================List wines sorted by Titel============================");
+        printWines();//print after sorting
     }
 }//end of class

@@ -1,4 +1,4 @@
-package ClassWork_027.ait.emloyee.model;
+package ClassWork_027.ait_027.emloyee.model;
 
 public class Manager extends Employee {
     private double baseSalary;

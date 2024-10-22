@@ -1,7 +1,7 @@
-package ClassWork_027.ait.emloyee.dao;
+package ClassWork_027.ait_027.emloyee.dao;
 
-import ClassWork_027.ait.emloyee.model.Employee;
-import ClassWork_027.ait.emloyee.model.SalesManager;
+import ClassWork_027.ait_027.emloyee.model.Employee;
+import ClassWork_027.ait_027.emloyee.model.SalesManager;
 
 import java.util.function.Predicate;
 

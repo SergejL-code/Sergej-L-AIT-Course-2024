@@ -1,4 +1,4 @@
-package ClassWork_027.ait.emloyee.dao;
+package HomeWork_28.ait_028.emloyee.dao;
 /*      - добавление сотрудника
         - нахождение сотрудника по id
         - обновление cотрудника
@@ -8,7 +8,7 @@ package ClassWork_027.ait.emloyee.dao;
         - объем ФОТ
         - объем продаж*/
 
-import ClassWork_027.ait.emloyee.model.Employee;
+import HomeWork_28.ait_028.emloyee.model.Employee;
 
 public interface Company {
 

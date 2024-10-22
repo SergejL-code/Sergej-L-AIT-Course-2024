@@ -1,11 +1,11 @@
-package ClassWork_027.ait.emloyee.test;
+package ClassWork_027.ait_027.emloyee.test;
 
-import ClassWork_027.ait.emloyee.dao.Company;
-import ClassWork_027.ait.emloyee.dao.CompanyImpl;
-import ClassWork_027.ait.emloyee.model.Employee;
-import ClassWork_027.ait.emloyee.model.Manager;
-import ClassWork_027.ait.emloyee.model.SalesManager;
-import ClassWork_027.ait.emloyee.model.Worker;
+import ClassWork_027.ait_027.emloyee.dao.Company;
+import ClassWork_027.ait_027.emloyee.dao.CompanyImpl;
+import ClassWork_027.ait_027.emloyee.model.Employee;
+import ClassWork_027.ait_027.emloyee.model.Manager;
+import ClassWork_027.ait_027.emloyee.model.SalesManager;
+import ClassWork_027.ait_027.emloyee.model.Worker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
