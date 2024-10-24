@@ -42,7 +42,7 @@ class PlanetTest {
     @Test
     void testArrayCopy() {
 
-        Planet[] planetsArrayCopy = Arrays.copyOf(planet, planet.length * 2);
+        Planet[] planetsArrayCopy = Arrays.copyOf(planet, planet.length *2);
         Planet.printArray(planetsArrayCopy, "List of planets of copy not sorted");
         System.out.println(planetsArrayCopy.length);
         Comparator<Planet> comparatorByName = Comparator.nullsLast((c1, c2) -> c1.getName().compareTo(c2.getName()));

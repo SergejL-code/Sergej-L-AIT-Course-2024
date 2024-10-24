@@ -50,12 +50,7 @@ class SoldierTest {
             }
         };
 
-        System.out.println("-------------- Print as is --------------");
-        printArray(soldiers);
-        Arrays.sort(soldiers, comparatorName); //
-        System.out.println("-------------- Print after  sorting by name --------------");
 
-        printArray(soldiers);
 
     }
 
