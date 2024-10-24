@@ -44,6 +44,10 @@ class CityTest {
             System.out.println(stadt);
         }
     }
+//    Распечатать в отсортированном виде.
+//    Есть ли в списке городов город с населением 1.2 млн человек?
+//    Отсортируйте список по алфавиту.
+//    Есть ли в списке город по имени Chicago? Какой он имеет номер в списке?
 
     @Test
     public void comparableTest() {
@@ -74,7 +78,10 @@ class CityTest {
             System.out.println("City " + pattern.getName() + "did not find, but it could be on index " + (-index - 1));
         }
     }
-
+//    Скопируйте массив в другой, имеющий в 2 раза большую длину.
+//    Отсортируйте полученный массив.
+//    Имеется ли в списке городов город Salem?
+//            "Salem", 690_000
 
     @Test
     void testArrayCopy() {
@@ -96,6 +103,7 @@ class CityTest {
 
     //Вставьте город Salem в список, сохранив порядок сортировки по населению.(!)
     //вставляем в имеющися список
+
     @Test
     void testInsertKeepSorting() {
         Arrays.sort(cities);// by default
