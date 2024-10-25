@@ -15,6 +15,8 @@ City("Dallas", 1_300_000);
 Имеется ли в списке городов город Salem?
 "Salem", 690_000
 Вставьте город Salem в список, сохранив порядок сортировки по населению.
+Проверьте работу метода System.arraycopy, скопировав часть массива.
+Проверьте работу метода Arrays.copyOfRange
 */
 
 import org.junit.jupiter.api.BeforeEach;
@@ -119,4 +121,23 @@ class CityTest {
         cities = citiesCopySeven; //переопределили ссылку на массив
         printArray(cities,"List with added city");
     }
+
+    //Проверьте работу метода System.arraycopy, скопировав часть массива.
+    @Test
+    void testSystemArrayCopy(){
+        //расширить массив на 2 элемента
+        City[]citiesCopyPlus_2 = new City[cities.length+2];
+        //копируем имеющейся массив в новый
+System.arraycopy(cities,2,citiesCopyPlus_2,0,4);//copy of elements 4, not index
+        printArray(cities,"List with original array");
+        printArray(citiesCopyPlus_2,"List with copy of array");
+    }
+    //Проверьте работу метода Arrays.copyOfRange
+    @Test
+    void  testArrayCopyOfRange(){
+        City[]citiesCopy = Arrays.copyOfRange(cities,5,cities.length+3);
+        printArray(cities,"List with original(source) array");
+        printArray(citiesCopy,"Copy of Range");
+    }
+
 }//end of class
