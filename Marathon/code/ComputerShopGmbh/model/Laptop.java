@@ -1,11 +1,21 @@
 package ComputerShopGmbh.model;
 
-public class Laptop extends Computer {
+import java.util.Objects;
+
+public class Laptop extends Device {
 
     private double displaySize;
     private  double weight;
     private int batteryLife;
     private String color;
+
+    public Laptop(int id, String brand, String model, int ram, boolean discount, double price, double displaySize, double weight, int batteryLife, String color) {
+        super(id, brand, model, ram, discount, price);
+        this.displaySize = displaySize;
+        this.weight = weight;
+        this.batteryLife = batteryLife;
+        this.color = color;
+    }
 
     public double getDisplaySize() {
         return displaySize;
@@ -39,22 +49,27 @@ public class Laptop extends Computer {
         this.color = color;
     }
 
-    public Laptop(String id, String brand, String model, double price, boolean discount, double displaySize, double weight, int batteryLife, String color) {
-        super(id, brand, model, price, discount);
-        this.displaySize = displaySize;
-        this.weight = weight;
-        this.batteryLife = batteryLife;
-        this.color = color;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Laptop laptop = (Laptop) o;
+        return Double.compare(displaySize, laptop.displaySize) == 0 && Double.compare(weight, laptop.weight) == 0 && batteryLife == laptop.batteryLife && Objects.equals(color, laptop.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), displaySize, weight, batteryLife, color);
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Laptop{");
-        sb.append("displaySize=").append(displaySize);
-        sb.append(", weight=").append(weight);
-        sb.append(", batteryLife=").append(batteryLife);
-        sb.append(", color='").append(color).append('\'');
-        sb.append('}');
-        return sb.toString();
+        return "Laptop{" +
+                "displaySize=" + displaySize +
+                ", weight=" + weight +
+                ", batteryLife=" + batteryLife +
+                ", color='" + color + '\'' +
+                '}';
     }
 }

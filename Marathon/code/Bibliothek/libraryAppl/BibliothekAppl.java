@@ -1,4 +1,4 @@
-package Bibliothek.libraraAppl;
+package Bibliothek.libraryAppl;
 
 import Bibliothek.dao.BibliotekImpl;
 import Bibliothek.dao.Bibliothek;

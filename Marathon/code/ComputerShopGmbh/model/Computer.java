@@ -2,82 +2,69 @@ package ComputerShopGmbh.model;
 
 import java.util.Objects;
 
-public  abstract class Computer {
-    private String id; // Serial number
-    private String brand;
-    private String model;
+public class Computer extends Device {
+    private String from_factor;
+    private String gpu;
     private double price;
-    private boolean discount;
 
-    public Computer(String id, String brand, String model, double price, boolean discount) {
-        this.id = id;
-        this.brand = brand;
-        this.model = model;
-        this.price = price;
-        this.discount = discount;
+    public Computer(int id, String brand, String model, int ram, boolean discount, double price, String from_factor, String gpu, double price1) {
+        super(id, brand, model, ram, discount, price);
+        this.from_factor = from_factor;
+        this.gpu = gpu;
+        this.price = price1;
     }
 
-    public String getId() {
-        return id;
+    public String getFrom_factor() {
+        return from_factor;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setFrom_factor(String from_factor) {
+        this.from_factor = from_factor;
     }
 
-    public String getBrand() {
-        return brand;
+    public String getGpu() {
+        return gpu;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public void setGpu(String gpu) {
+        this.gpu = gpu;
     }
 
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
+    @Override
     public double getPrice() {
         return price;
     }
 
+    @Override
     public void setPrice(double price) {
         this.price = price;
-    }
-
-    public boolean isDiscount() {
-        return discount;
-    }
-
-    public void setDiscount(boolean discount) {
-        this.discount = discount;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Computer computer)) return false;
-        return discount == computer.discount && Objects.equals(id, computer.id);
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Computer computer = (Computer) o;
+        return Double.compare(price, computer.price) == 0 && Objects.equals(from_factor, computer.from_factor) && Objects.equals(gpu, computer.gpu);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, discount);
+        return Objects.hash(super.hashCode(), from_factor, gpu, price);
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Computer{");
-        sb.append("id='").append(id).append('\'');
-        sb.append(", brand='").append(brand).append('\'');
-        sb.append(", model='").append(model).append('\'');
-        sb.append(", price=").append(price);
-        sb.append(", discount=").append(discount);
-        sb.append('}');
-        return sb.toString();
+        return "Computer{" +
+                "from_factor='" + from_factor + '\'' +
+                ", gpu='" + gpu + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
+    @Override
+    public double calcPriceWithRabatt() {
+        return 0;
     }
 }
