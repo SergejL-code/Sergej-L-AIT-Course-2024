@@ -5,24 +5,24 @@ import java.util.Objects;
 public class Doku {
 
 
-    private String id; // DOI
+    private long Doi; // id
     private String author;
     private String title;
     private int year;
 
-    public Doku(String id, String author, String title, int year) {
-        this.id = id;
+    public Doku(long Doi, String author, String title, int year) {
+        this.Doi = Doi;
         this.author = author;
         this.title = title;
         this.year = year;
     }
 
-    public String getId() {
-        return id;
+    public long getDoi() {
+        return Doi;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setDoi(long doi) {
+        this.Doi = doi;
     }
 
     public String getAuthor() {
@@ -53,18 +53,18 @@ public class Doku {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Doku doku)) return false;
-        return Objects.equals(id, doku.id) && Objects.equals(author, doku.author) && Objects.equals(title, doku.title);
+        return Objects.equals(Doi, doku.Doi) && Objects.equals(author, doku.author) && Objects.equals(title, doku.title);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, author, title);
+        return Objects.hash(Doi, author, title);
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Doku{");
-        sb.append("id='").append(id).append('\'');
+        sb.append("id='").append(Doi).append('\'');
         sb.append(", author='").append(author).append('\'');
         sb.append(", title='").append(title).append('\'');
         sb.append(", year=").append(year);

@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.function.Predicate;
 
-public class GarageImpl implements Garage {
+public  class GarageImpl implements Garage {
 
     private Car[] cars;
     private  int size;
@@ -84,7 +84,6 @@ public class GarageImpl implements Garage {
 
     @Override
     public Car[] sortingCarByModel() {
-
         Comparator<Car> comparatorByModel = new Comparator<Car>() {
             @Override
             public int compare(Car car1, Car car2) {
@@ -93,8 +92,11 @@ public class GarageImpl implements Garage {
             }
         };
         Arrays.sort(cars, comparatorByModel);
-        return new Car[0];
+        return cars;
+
     }
+
+
 
 
 
