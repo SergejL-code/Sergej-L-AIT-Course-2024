@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/lesson_01_intro/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_02/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_03/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWork/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWork/lesson2/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWork/lesson3/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWork/lesson4/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWork/lesson5/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_04/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_05/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_06/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_07/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_08/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_09/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_10/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MyMethod_and_Class/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_11/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_12/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_13/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_14/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_15/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_16/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_17/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_18/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wiederholung/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_19/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_20/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_21/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_22/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_24/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_25/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_23_24/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_26/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_27/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Marathon/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_28/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_28/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_29/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_30/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_31/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_32/code" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Fremd" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="JUnit5.8.1">
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

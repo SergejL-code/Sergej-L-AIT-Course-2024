@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="lesson_01_intro/code"/>
+	<classpathentry kind="src" path="lesson_02/code"/>
+	<classpathentry kind="src" path="lesson_03/code"/>
+	<classpathentry kind="src" path="HomeWork/code"/>
+	<classpathentry kind="src" path="HomeWork/lesson2/code"/>
+	<classpathentry kind="src" path="HomeWork/lesson3/code"/>
+	<classpathentry kind="src" path="HomeWork/lesson4/code"/>
+	<classpathentry kind="src" path="HomeWork/lesson5/code"/>
+	<classpathentry kind="src" path="lesson_04/code"/>
+	<classpathentry kind="src" path="lesson_05/code"/>
+	<classpathentry kind="src" path="lesson_06/code"/>
+	<classpathentry kind="src" path="lesson_07/code"/>
+	<classpathentry kind="src" path="lesson_08/code"/>
+	<classpathentry kind="src" path="lesson_09/code"/>
+	<classpathentry kind="src" path="lesson_10/code"/>
+	<classpathentry kind="output" path="out/production/jahr2024"/>
+</classpath>

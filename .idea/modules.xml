@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyMethod_and_Class/MyMethod_and_Class.iml" filepath="$PROJECT_DIR$/MyMethod_and_Class/MyMethod_and_Class.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/Sergej-L-AIT-Course-2024.iml" filepath="$PROJECT_DIR$/.idea/Sergej-L-AIT-Course-2024.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_01_intro/lesson_01_intro.iml" filepath="$PROJECT_DIR$/lesson_01_intro/lesson_01_intro.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_02/lesson_02.iml" filepath="$PROJECT_DIR$/lesson_02/lesson_02.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_03/lesson_03.iml" filepath="$PROJECT_DIR$/lesson_03/lesson_03.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_04/lesson_04.iml" filepath="$PROJECT_DIR$/lesson_04/lesson_04.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_05/lesson_05.iml" filepath="$PROJECT_DIR$/lesson_05/lesson_05.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_06/lesson_06.iml" filepath="$PROJECT_DIR$/lesson_06/lesson_06.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_07/lesson_07.iml" filepath="$PROJECT_DIR$/lesson_07/lesson_07.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_10/lesson_10.iml" filepath="$PROJECT_DIR$/lesson_10/lesson_10.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_11/lesson_11.iml" filepath="$PROJECT_DIR$/lesson_11/lesson_11.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_12/lesson_12.iml" filepath="$PROJECT_DIR$/lesson_12/lesson_12.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_13/lesson_13.iml" filepath="$PROJECT_DIR$/lesson_13/lesson_13.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_14/lesson_14.iml" filepath="$PROJECT_DIR$/lesson_14/lesson_14.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_15/lesson_15.iml" filepath="$PROJECT_DIR$/lesson_15/lesson_15.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_16/lesson_16.iml" filepath="$PROJECT_DIR$/lesson_16/lesson_16.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_17/lesson_17.iml" filepath="$PROJECT_DIR$/lesson_17/lesson_17.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_18/lesson_18.iml" filepath="$PROJECT_DIR$/lesson_18/lesson_18.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_19/lesson_19.iml" filepath="$PROJECT_DIR$/lesson_19/lesson_19.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_21/lesson_21.iml" filepath="$PROJECT_DIR$/lesson_21/lesson_21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/jahr2024.iml" filepath="$PROJECT_DIR$/.idea/jahr2024.iml" />
     </modules>
   </component>
 </project>
