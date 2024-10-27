@@ -2,15 +2,15 @@ package ComputerShopGmbh.model;
 
 import java.util.Objects;
 
-public abstract class Device {
-    private int id;
+public abstract class GeneralDevice {
+    private long id;
     private String brand;
     private String model;
     private int ram;
     private boolean discount;
     private double price;
 
-    public Device(int id, String brand, String model, int ram, boolean discount, double price) {
+    public GeneralDevice(long id, String brand, String model, int ram, boolean discount, double price) {
         this.id = id;
         this.brand = brand;
         this.model = model;
@@ -19,11 +19,11 @@ public abstract class Device {
         this.price = price;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -70,9 +70,21 @@ public abstract class Device {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Device device = (Device) o;
-        return id == device.id && ram == device.ram && discount == device.discount && Double.compare(price, device.price) == 0 && Objects.equals(brand, device.brand) && Objects.equals(model, device.model);
+        if (!(o instanceof GeneralDevice that)) return false;
+        return id == that.id && ram == that.ram && discount == that.discount && Double.compare(price, that.price) == 0 && Objects.equals(brand, that.brand) && Objects.equals(model, that.model);
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Device{");
+        sb.append("id=").append(id);
+        sb.append(", brand='").append(brand).append('\'');
+        sb.append(", model='").append(model).append('\'');
+        sb.append(", ram=").append(ram);
+        sb.append(", discount=").append(discount);
+        sb.append(", price=").append(price);
+        sb.append('}');
+        return sb.toString();
     }
 
     @Override
@@ -80,16 +92,5 @@ public abstract class Device {
         return Objects.hash(id, brand, model, ram, discount, price);
     }
 
-    @Override
-    public String toString() {
-        return "Device{" +
-                "id=" + id +
-                ", brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", ram=" + ram +
-                ", discount=" + discount +
-                ", price=" + price +
-                '}';
-    }
     public abstract double calcPriceWithRabatt();
 }

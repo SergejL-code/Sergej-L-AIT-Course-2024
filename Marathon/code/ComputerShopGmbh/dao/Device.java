@@ -1,9 +1,12 @@
 package ComputerShopGmbh.dao;
 
+import ComputerShopGmbh.model.GeneralDevice;
+
 public interface Device {
-    public boolean addDevice(ComputerShopGmbh.model.Device device);
-    public ComputerShopGmbh.model.Device removeDevice(long id);
-    public ComputerShopGmbh.model.Device findDevice(long id);
-    public int size();
-    public void printDevice();
+   boolean addDevice(GeneralDevice device);
+     GeneralDevice removeDevice(long id);
+    GeneralDevice findDevice(long id);
+     GeneralDevice updateDevice(GeneralDevice device);
+     int size();
+     void printDevice();
 }

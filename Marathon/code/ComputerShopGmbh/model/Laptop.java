@@ -2,14 +2,14 @@ package ComputerShopGmbh.model;
 
 import java.util.Objects;
 
-public class Laptop extends Device {
+public class Laptop extends GeneralDevice {
 
     private double displaySize;
     private  double weight;
     private int batteryLife;
     private String color;
 
-    public Laptop(int id, String brand, String model, int ram, boolean discount, double price, double displaySize, double weight, int batteryLife, String color) {
+    public Laptop(long id, String brand, String model, int ram, boolean discount, double price, double displaySize, double weight, int batteryLife, String color) {
         super(id, brand, model, ram, discount, price);
         this.displaySize = displaySize;
         this.weight = weight;
@@ -71,5 +71,10 @@ public class Laptop extends Device {
                 ", batteryLife=" + batteryLife +
                 ", color='" + color + '\'' +
                 '}';
+    }
+
+    @Override
+    public double calcPriceWithRabatt() {
+        return 0;
     }
 }

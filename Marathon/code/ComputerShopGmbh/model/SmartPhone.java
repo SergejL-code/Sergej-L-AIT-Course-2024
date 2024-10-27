@@ -2,12 +2,12 @@ package ComputerShopGmbh.model;
 
 import java.util.Objects;
 
-public class SmartPhone extends Device{
+public class SmartPhone extends GeneralDevice{
     private String os;
     private boolean has_5g;
     private int camera_resolution;
 
-    public SmartPhone(int id, String brand, String model, int ram, boolean discount, double price, String os, boolean has_5g, int camera_resolution) {
+    public SmartPhone(long id, String brand, String model, int ram, boolean discount, double price, String os, boolean has_5g, int camera_resolution) {
         super(id, brand, model, ram, discount, price);
         this.os = os;
         this.has_5g = has_5g;
@@ -59,6 +59,11 @@ public class SmartPhone extends Device{
                 ", has_5g=" + has_5g +
                 ", camera_resolution=" + camera_resolution +
                 '}';
+    }
+
+    @Override
+    public double calcPriceWithRabatt() {
+        return 0;
     }
 }
 
