@@ -1,8 +1,10 @@
 package ComputerShopGmbh.model;
 
+
+
 import java.util.Objects;
 
-public abstract class GeneralDevice {
+public abstract class GeneralDevice{
     private long id;
     private String brand;
     private String model;
@@ -92,5 +94,6 @@ public abstract class GeneralDevice {
         return Objects.hash(id, brand, model, ram, discount, price);
     }
 
+    // Абстрактный метод для расчета скидочной цены
     public abstract double calcPriceWithRabatt();
 }

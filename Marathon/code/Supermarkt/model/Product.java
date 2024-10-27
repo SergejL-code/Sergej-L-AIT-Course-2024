@@ -3,26 +3,26 @@ package Supermarkt.model;
 import java.util.Objects;
 
 public abstract class Product {
-    private String id; // Barcode
+    private String barcode; // id
     private String name;
     private String category;
     private String expiryDate; // In the format yyyy-MM-dd
     private double price;
 
-    public Product(String id, String name, String category, String expiryDate, double price) {
-        this.id = id;
+    public Product(String barcode, String name, String category, String expiryDate, double price) {
+        this.barcode = barcode;
         this.name = name;
         this.category = category;
         this.expiryDate = expiryDate;
         this.price = price;
     }
 
-    public String getId() {
-        return id;
+    public String getBarcode() {
+        return barcode;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setBarcode(String barcode) {
+        this.barcode = barcode;
     }
 
     public String getName() {
@@ -60,26 +60,27 @@ public abstract class Product {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Product product)) return false;
-        return Double.compare(price, product.price) == 0 && Objects.equals(id, product.id) && Objects.equals(expiryDate, product.expiryDate);
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return Double.compare(price, product.price) == 0 && Objects.equals(barcode, product.barcode) && Objects.equals(name, product.name) && Objects.equals(category, product.category) && Objects.equals(expiryDate, product.expiryDate);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, expiryDate, price);
+        return Objects.hash(barcode, name, category, expiryDate, price);
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Product{");
-        sb.append("id='").append(id).append('\'');
-        sb.append(", name='").append(name).append('\'');
-        sb.append(", category='").append(category).append('\'');
-        sb.append(", expiryDate='").append(expiryDate).append('\'');
-        sb.append(", price=").append(price);
-        sb.append('}');
-        return sb.toString();
+        return "Product{" +
+                "barcode='" + barcode + '\'' +
+                ", name='" + name + '\'' +
+                ", category='" + category + '\'' +
+                ", expiryDate='" + expiryDate + '\'' +
+                ", price=" + price +
+                '}';
     }
+
 }//end of class
 //@Override
 //public Product[] fillMarket(Product[] products) {

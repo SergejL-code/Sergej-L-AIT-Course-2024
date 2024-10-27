@@ -1,5 +1,7 @@
 package ComputerShopGmbh.model;
 
+
+
 import java.util.Objects;
 
 public class Computer extends GeneralDevice {
@@ -43,7 +45,7 @@ public class Computer extends GeneralDevice {
 
     @Override
     public double calcPriceWithRabatt() {
-        return 0;
+        return isDiscount() ? getPrice() * 0.9 : getPrice();
     }
 
     @Override
@@ -54,6 +56,8 @@ public class Computer extends GeneralDevice {
         sb.append('}');
         return sb.toString();
     }
+
+
 
 
 }

@@ -2,7 +2,7 @@ package ComputerShopGmbh.dao;
 
 import ComputerShopGmbh.model.GeneralDevice;
 
-public class DeviceImpl implements Device{
+public class DeviceImpl implements DeviceControl{
 
    private GeneralDevice[]devices;
    private  int size;
@@ -71,6 +71,8 @@ public class DeviceImpl implements Device{
         return null;
     }
 
+
+
     @Override
     public GeneralDevice updateDevice(GeneralDevice device)
     { for (int i = 0; i < size; i++) {
@@ -94,5 +96,10 @@ public class DeviceImpl implements Device{
         for (int i = 0; i < size; i++) {
             System.out.println(devices[i]);
         }
+    }
+
+    @Override
+    public double calcPriceWithDiscount() {
+        return 0;
     }
 }// end of class
