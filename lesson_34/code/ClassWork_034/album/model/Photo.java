@@ -3,14 +3,14 @@ package ClassWork_034.album.model;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-public class Foto implements Comparable<Foto>{
+public class Photo implements Comparable<Photo>{
     private int albumId;
     private int photoId;
     private String title;
     private String url;
     private LocalDateTime date;
 
-    public Foto(int albumId, int photoId, String title, String url, LocalDateTime date) {
+    public Photo(int albumId, int photoId, String title, String url, LocalDateTime date) {
         this.albumId = albumId;
         this.photoId = photoId;
         this.title = title;
@@ -61,8 +61,8 @@ public class Foto implements Comparable<Foto>{
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Foto foto)) return false;
-        return albumId == foto.albumId && photoId == foto.photoId;
+        if (!(o instanceof Photo photo)) return false;
+        return albumId == photo.albumId && photoId == photo.photoId;
     }
 
     @Override
@@ -71,7 +71,7 @@ public class Foto implements Comparable<Foto>{
     }
 
     @Override
-    public int compareTo(Foto o) {
+    public int compareTo(Photo o) {
         return this.getDate().compareTo(o.getDate());
 
     }

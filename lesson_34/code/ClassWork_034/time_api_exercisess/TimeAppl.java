@@ -33,14 +33,20 @@ public class TimeAppl {
         System.out.println(gagarin.isBefore(localDate));//Logisches  true
         System.out.println(gagarin.isAfter(localDate));//false
         System.out.println("========================================================================================");
+
+
         long period = ChronoUnit.YEARS.between(gagarin, localDate);
         System.out.println(period);
         long days = ChronoUnit.DAYS.between(gagarin, localDate);
         System.out.println(days);
+
+
         System.out.println("================================DateTime Formatter========================================================");
+
         DateTimeFormatter df = DateTimeFormatter.ISO_LOCAL_DATE;// YYYY-mm-DD
         String date = gagarin.format(df); // LocalDate to String
         System.out.println(date);
+
         // выбираем другой формат
         df = DateTimeFormatter.BASIC_ISO_DATE;
         date = gagarin.format(df);
@@ -58,16 +64,24 @@ public class TimeAppl {
 
         // переводим LocalDate from String
         System.out.println("/////////=================//////==============/////=======================//////");
-
+        //String to Iso
         String stringDate = "29:10:2024";
         LocalDate date2 = LocalDate.parse(stringDate, DateTimeFormatter.ofPattern("[dd:MM:yyyy][dd/MM/yyyy][dd-MM-yyyy"));
         System.out.println(date2);//ISO format
 
 
-        String stringDate1 = "29/10:2024";// or 29-10-2024
-        LocalDate date3 = LocalDate.parse(stringDate1, DateTimeFormatter.ofPattern("[dd:MM:yyyy][dd/MM/yyyy][dd-MM-yyyy"));
+        String stringDate1 = "29/10/2024";// or 29-10-2024
+        LocalDate date3 = LocalDate.parse(stringDate1, DateTimeFormatter.ofPattern("[dd:MM:yyyy][dd/MM/yyyy][dd-MM-yyyy]"));
         System.out.println(date3);//ISO format
 
+        String diannaBirthday = "23.06.1983";
+        LocalDate dianaBirt = LocalDate.parse(diannaBirthday, DateTimeFormatter.ofPattern("[dd.MM.yyyy]"));
+        System.out.println(dianaBirt);
+
+        // Eigene Format
+        df = DateTimeFormatter.ofPattern("dd.MMMM.yyyy", Locale.FRANCE);
+        String d = dianaBirt.format(df);
+        System.out.println(d);
 
 
 
