@@ -1,4 +1,4 @@
-package ClassWork_034.album.model;
+package ClassWork_035.album.model;
 
 import java.time.LocalDateTime;
 import java.util.Objects;

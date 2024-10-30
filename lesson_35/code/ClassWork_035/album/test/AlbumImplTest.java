@@ -1,8 +1,8 @@
-package ClassWork_034.album.test;
+package ClassWork_035.album.test;
 
-import ClassWork_034.album.dao.Album;
-import ClassWork_034.album.dao.AlbumImpl;
-import ClassWork_034.album.model.Photo;
+import ClassWork_035.album.dao.Album;
+import ClassWork_035.album.dao.AlbumImpl;
+import ClassWork_035.album.model.Photo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -48,12 +48,25 @@ class AlbumImplTest {
 
     @Test
     void testAddPhoto() {
+        //добавить null в альбом возвращает false. Это предполагает, что метод addPhoto отклоняет null значения.
         assertFalse(album.addPhoto(null));
+
+        // добавление photos[1] также возвращает false. Это может означать, что photos[1] уже находится в альбоме или не соответствует условиям для добавления.
         assertFalse(album.addPhoto(photos[1]));
+
+        // создается новый объект Photo с определенными атрибутами (id=2, userId=3 и т.д.) и добавляется в альбом.
         Photo photo = new Photo(2,3,"t7","url7",now.minusDays(2));
+
+        //Утверждение проверяет, что добавление возвращает true, то есть выполнено успешно.
         assertTrue(album.addPhoto(photo));
+
+        //После успешного добавления, проверяется, что размер альбома теперь равен 7. Это подразумевает, что до этого добавления в альбоме было 6 фотографий.
         assertEquals(7,album.size());
+
+        //Создается еще один экземпляр Photo с немного отличающимися атрибутами, но с тем же id (2), что и у предыдущей фотографии. Это проверяет, что addPhoto не добавит дубликат по id.
         photo = new Photo(2,4,"t8","url8",now.minusDays(2));
+
+        //В завершение тест проверяет, что добавление новой фотографии с тем же id возвращает false, то есть метод addPhoto предотвращает добавление дубликатов по id.
         assertFalse(album.addPhoto(photo));
     }
 
@@ -87,7 +100,7 @@ class AlbumImplTest {
     @Test
     void testGetPhotoBeetwenDate() {
         LocalDate toDay= LocalDate.now();
-        Photo[] actual = album.getPhotoBeetwenDate(toDay.minusDays(-2),toDay.minusDays(-6));
+        Photo[] actual = album.getPhotoBeetwenDate(toDay.minusDays(2),toDay.minusDays(6));
         Arrays.sort(actual,comparator);
         Photo[]expected  = {photos[5],photos[4],photos[2] };
         Arrays.sort(expected,comparator);

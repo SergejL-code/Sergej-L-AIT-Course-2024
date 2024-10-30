@@ -1,6 +1,6 @@
-package ClassWork_034.album.dao;
+package ClassWork_035.album.dao;
 
-import ClassWork_034.album.model.Photo;
+import ClassWork_035.album.model.Photo;
 
 import java.time.LocalDate;
 
