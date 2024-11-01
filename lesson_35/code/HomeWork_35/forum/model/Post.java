@@ -4,18 +4,19 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Post {
-    int postId;
-    String title;
-    String author;
-    String content;
-    LocalDateTime date;
-    int likes;
+    private int postId;
+    private String title;
+    private String author;
+    private String content;
+    private LocalDateTime date;
+    private int likes;
 
     public Post(int postId, String title, String author, String content) {
         this.postId = postId;
         this.title = title;
         this.author = author;
         this.content = content;
+        date =LocalDateTime.now();
     }
 
     public int getPostId() {
@@ -49,9 +50,12 @@ public class Post {
     public void setDate(LocalDateTime date) {
         this.date = date;
     }
-        int addLike(){
+
+    int addLike() {
         return 0;
-        };
+    }
+
+    ;
 
     @Override
     public String toString() {

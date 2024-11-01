@@ -43,7 +43,11 @@ class AlbumImplTest {
         //ToDO add photos to album
         for (int i = 0; i < 6; i++) {
             album.addPhoto(photos[i]);
+
+
         }
+        //print photos
+        printArray(photos);
     }
 
     @Test
@@ -95,12 +99,13 @@ class AlbumImplTest {
         Photo[]expected = {photos[3],photos[4]};
         Photo[]actual = album.getAllPhotoFromAlbum(2);
         assertArrayEquals(expected,actual);
+
     }
 
     @Test
     void testGetPhotoBeetwenDate() {
         LocalDate toDay= LocalDate.now();
-        Photo[] actual = album.getPhotoBeetwenDate(toDay.minusDays(2),toDay.minusDays(6));
+        Photo[] actual = album.getPhotoBeetwenDate(toDay.minusDays(6),toDay.minusDays(2));
         Arrays.sort(actual,comparator);
         Photo[]expected  = {photos[5],photos[4],photos[2] };
         Arrays.sort(expected,comparator);
@@ -110,5 +115,10 @@ class AlbumImplTest {
     @Test
     void testSize() {
         assertEquals(6,album.size());
+    }
+    private  void printArray(Photo[] photos){
+        for (Photo p : photos) {
+            System.out.println(p);
+        }
     }
 }//end of class

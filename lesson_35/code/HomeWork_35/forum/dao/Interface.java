@@ -7,7 +7,7 @@ import java.time.LocalDate;
 public interface Interface {
     boolean addPost(Post post);
 
-    boolean removePost(int posId);
+    boolean removePost(int postId);
 
     boolean updatePost(String content, int postId);
 
@@ -15,7 +15,7 @@ public interface Interface {
 
     Post[] getPostsByAuthor(String author);
 
-    Post[] getPostByAuthor(LocalDate dateTo, LocalDate dateFrom);
+    Post[] getPostByAuthor(String author,LocalDate dateFrom, LocalDate dateTo);
 
     int size();
 }
