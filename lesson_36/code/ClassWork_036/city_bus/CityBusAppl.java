@@ -16,7 +16,7 @@ public class CityBusAppl {
         for (Bus bus : cityBusList) {
             System.out.println(bus);
         }
-        //sorting
+        //sorting default
 
         cityBusList.sort(Bus::compareTo);
         System.out.println("===============================================================");
@@ -38,7 +38,7 @@ public class CityBusAppl {
         for (Bus bus : cityBusSet) {
             System.out.println(bus);
         }
-     //   TreeSet<Bus>cityBustreeSet
+
        // создаем свой компаратор
         Comparator<Bus> comparator = new Comparator<Bus>() {
             @Override

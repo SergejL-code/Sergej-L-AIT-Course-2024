@@ -39,7 +39,7 @@ public class IListAppl {
         }
         System.out.println("=============================================================================================================");
 
-//        for (int i = 0; i < listOfAge.size(); i++) {
+ //      for (int i = 0; i < listOfAge.size(); i++) {
 //            if(listOfAge.get(i) == 37){
 //            System.out.println(i + ": 37 ");
 //            }
@@ -55,7 +55,7 @@ public class IListAppl {
         for (Integer i : listOfAge) {
             sum += i;
         }
-        System.out.println("=====================================================");
+        System.out.println("=============================avgAge========================");
         System.out.println(sum);
         double avgA = (double) sum / listOfAge.size();
         System.out.println(avgA);

@@ -26,7 +26,8 @@ public class BubbleSorte {
             }
             return res;
     }
-    public static void bubbleSort(int[] array) {
+    public static int bubbleSort(int[] array) {
+        int count=0;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length - 1 - i; j++) {
                 if (array[j] > array[j + 1]) {//compare 2 elements of array,if left>right => swap
@@ -34,8 +35,17 @@ public class BubbleSorte {
                     int temp = array[j];
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
+                    count++;
                 }
             }
         }
+        printArray(array);
+        return count;
     }//end of bubblesort
+
+    private static void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i] + " / ");
+        }
+    }
 }//end of class
