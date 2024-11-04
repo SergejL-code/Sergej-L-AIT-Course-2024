@@ -135,9 +135,21 @@ public class NodeListImpl<E> implements NodeList<E> {
 
     @Override
     public int lastIndexOf(Object o) {
-        // TODO - самостоятельно
-        return 0;
-    }
+
+//            if (o!=null){
+//                for (int i = size-1; i >=0 ; i--) {
+//                    if(o.equals(Node<E>)){
+//                        return i;
+//                    }
+//                }
+//            }else{
+//                for (int i = size-1; i >=0 ; i--) {
+//                    if(o== elements[i]){
+//                        return i; }
+//                }
+//            }
+           return 0;
+   }
 
     @Override
     public E remove(int index) {

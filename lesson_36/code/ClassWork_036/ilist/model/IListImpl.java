@@ -127,7 +127,19 @@ public class IListImpl<E> implements IList<E> {
 
     @Override
     public int LastIndexOf(Object o) {
-        return 0;
+        if (o!=null){
+            for (int i = size-1; i >=0 ; i--) {
+                if(o.equals(elements[i])){
+                    return i;
+                }
+            }
+        }else{
+            for (int i = size-1; i >=0 ; i--) {
+               if(o== elements[i]){
+                   return i; }
+            }
+        }
+        return -1;
     }
 
     @Override
