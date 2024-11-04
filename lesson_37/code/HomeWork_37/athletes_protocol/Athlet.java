@@ -5,11 +5,11 @@ import java.util.Objects;
 public class Athlet implements Comparable<Athlet> {
     private String lastName;
     private String firstName;
-    private  int regNumber;
+    private  String regNumber;
     private  String clubName;
     private double result;
 
-    public Athlet(String lastName, String firstName, int regNumber, String clubName, double result) {
+    public Athlet(String lastName, String firstName, String regNumber, String clubName, double result) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.regNumber = regNumber;
@@ -33,11 +33,11 @@ public class Athlet implements Comparable<Athlet> {
         this.firstName = firstName;
     }
 
-    public int getRegNumber() {
+    public String getRegNumber() {
         return regNumber;
     }
 
-    public void setRegNumber(int regNumber) {
+    public void setRegNumber(String regNumber) {
         this.regNumber = regNumber;
     }
 
@@ -83,6 +83,6 @@ public class Athlet implements Comparable<Athlet> {
 
     @Override
     public int compareTo(Athlet o) {
-        return Integer.compare(getRegNumber(),o.getRegNumber());
+        return 0;
     }
 }
