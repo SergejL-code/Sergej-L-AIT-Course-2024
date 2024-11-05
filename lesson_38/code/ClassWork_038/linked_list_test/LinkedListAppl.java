@@ -56,7 +56,7 @@ public class LinkedListAppl {
         //удалим все элементы , кратные 3
         list.removeIf(e -> e % 3 == 0);
         print(list);
-      //  print(list.indexOf(200));
+     //print(list.indexOf("200"));
 
 
     }//end of main

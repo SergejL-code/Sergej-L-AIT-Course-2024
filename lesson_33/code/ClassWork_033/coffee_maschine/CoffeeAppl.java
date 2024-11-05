@@ -8,11 +8,11 @@ public class CoffeeAppl {
 
         Coffee[] coffees = Coffee.values();
         System.out.println("Welcome to CoffeeCafe!");
+        boolean flag = true;
         Scanner scanner = new Scanner(System.in);
         //start of loop
-        boolean flag = true;
-        while (flag) {
 
+        while (flag) {
             System.out.println("Input your choice:  Press 1 for Espresso, 2 for Americano,3 for Capuccino,4 for Latte,5 for exit");
             int choice = scanner.nextInt();
 
