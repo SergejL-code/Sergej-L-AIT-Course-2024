@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Curses {
     public static void main(String[] args) {
-        List<String> mathematics = Arrays.asList("Иван", "Мария", "Анна", "Петр","Юлия","Николай");
+        List<String> mathematics = Arrays.asList("", "Мария", "Анна", "","","Николай");
         List<String>computerscience =Arrays.asList("Анна", "Елена", "Петр", "Дмитрий","Николай");
 
 

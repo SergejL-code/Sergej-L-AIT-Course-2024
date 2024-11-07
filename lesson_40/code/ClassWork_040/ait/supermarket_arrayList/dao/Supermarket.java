@@ -1,6 +1,6 @@
-package HomeWork_39.supermarket_3.dao;
+package ClassWork_040.ait.supermarket_arrayList.dao;
 
-import HomeWork_39.supermarket_3.model.Product;
+import ClassWork_040.ait.supermarket_arrayList.model.Product;
 
 public interface Supermarket extends Iterable<Product> {
     boolean addProduct(Product product);
@@ -12,6 +12,6 @@ public interface Supermarket extends Iterable<Product> {
     Iterable<Product> findByCategory(String category);
     Iterable<Product> findByBrand(String brand);
     Iterable<Product >findProductsWithExpiredDate();
-    int skuQuantity();
+    int skuQuantity();//это size
 
 }
