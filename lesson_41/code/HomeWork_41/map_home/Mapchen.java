@@ -13,12 +13,13 @@ public class Mapchen {
 
         map.put(1, "Mama");
         map.put(2, "putz");
-        map.put(3, " das Fenster");
+        map.put(3, " ein Fenster");
+
 
         String string1 = map.get(1);
         String string2 = map.get(2);
         String string3 = map.get(3);
-        System.out.println(string3 + " " + string2 + " " + string1);
+        System.out.println( string1+ " " + string2 + " " + string3);
 
         for (Map.Entry<Integer, String> entry : map.entrySet()) {
             Integer key = entry.getKey();

@@ -96,7 +96,7 @@ public class CitizensImpl implements Citizens {
         int from = -Collections.binarySearch(ageList, pattern, ageComparator) - 1;
         pattern = new Person(Integer.MAX_VALUE, "", "", now.minusYears(maxAge));
         int to = -Collections.binarySearch(ageList, pattern, ageComparator) - 1;
-        return ageList.subList(from, to);
+        return ageList.subList(from, to);// правый край не входит
     }
 
     // O - ???//O(log N)
