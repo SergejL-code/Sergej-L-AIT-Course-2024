@@ -40,7 +40,7 @@ public class MenAndWoman {
         int  woman = s-men;
 
         System.out.println("Men: " + men + " Woman: " + woman );
-        //1 Variant проходим по values, values()
+        // 2 Variant проходим по values, values()
         System.out.println("**************************** 2 Variant Values  ******************************************");
         men=0;
         woman=0;
