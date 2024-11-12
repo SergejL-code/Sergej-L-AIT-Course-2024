@@ -10,7 +10,7 @@ public class StudentsAppL {
 
 
         Stream<Integer>fachNote = getRandomNumbers(MINNOTE, MAXNOTE + 1, FACH);
-        System.out.println(intS);
+        System.out.println(fachNote);
     }
 
     private static Stream<Integer> getRandomNumbers(int minnote, int maxnote, int fach) {
@@ -18,5 +18,5 @@ public class StudentsAppL {
                 .ints(fach,minnote,maxnote)
                 .boxed();
 
-    }
-}
+    }//end of main
+}//end of class
