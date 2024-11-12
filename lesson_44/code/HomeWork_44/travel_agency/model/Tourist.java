@@ -34,15 +34,20 @@ public class Tourist implements Comparable<Tourist>{
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Tourist{");
-        sb.append("name='").append(name).append('\'');
-        sb.append(", country=").append(country);
-        sb.append('}');
+        // Создаем StringBuilder для сборки строки
+        StringBuilder sb = new StringBuilder();
+        // Соединяем страны в столбик
+        String countriesInColumn = String.join("\n", country);
+
+        // Формируем строку с именем и списком стран
+        sb.append(String.format("%s посетил такие страны, как:\n%s \n", name, countriesInColumn ));
         return sb.toString();
     }
 
     @Override
     public int compareTo(Tourist o) {
-        return 0;
+        // Сравнение туристов по имени в алфавитном порядке
+        return this.name.compareTo(o.name);
     }
+
 }

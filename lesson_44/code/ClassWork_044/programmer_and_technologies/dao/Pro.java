@@ -1,14 +1,19 @@
 package ClassWork_044.programmer_and_technologies.dao;
 
-public interface Pro  {
+import ClassWork_044.programmer_and_technologies.model.Programmer;
 
-//  fillListProgrammers();
-//
-//    printTechnologies();
-//
-//    printTechnologiesByFrequency();
-//
-//    printTechnologiesByFrequencySorted();
-//
-//    printTechnologiesRating();
+import java.util.List;
+
+public interface Pro {
+
+    List<Programmer> fillListProgrammers();
+
+    void printTechnologies(List<Programmer> programmers);
+
+    void printTechnologiesByFrequency(List<Programmer> programmers);
+
+    void printTechnologiesByFrequencySorted(List<Programmer> programmers);
+
+    void printTechnologiesRating(List<Programmer> programmers);
+
 }

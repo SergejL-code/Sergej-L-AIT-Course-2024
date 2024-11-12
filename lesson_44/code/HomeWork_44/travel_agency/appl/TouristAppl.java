@@ -16,14 +16,16 @@ public class TouristAppl {
         //печатаем список
         System.out.println("*********************** Print each tourist********************************** ");
         tourists.forEach(System.out::println);
-//наиболее популярны страны
+        //наиболее популярны страны
         System.out.println("***************************************** Print country rating *****************************");
 
         office.printCountryRating(tourists);
 
-//печатаем клиентов, которые посетили наибольшее количество стран
-        System.out.println("********************************** Print the most popular country **********************************");
+        //печатаем клиентов, которые посетили наибольшее количество стран
+        System.out.println("********************************** clients who have visited the most countries **********************************");
         office.printMostPopularCountry(tourists);
+
+
     }//end of main
 
 } //end of class
