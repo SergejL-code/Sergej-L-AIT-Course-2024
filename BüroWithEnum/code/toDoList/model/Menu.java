@@ -1,6 +1,8 @@
-package toDoList;
+package toDoList.model;
 
-public enum Menu {
+import java.io.Serializable;
+
+public enum Menu implements Serializable {
     ADD(1, "add task"),
     VAT(2, "view all task"),
     DT(3, "delete a task"),

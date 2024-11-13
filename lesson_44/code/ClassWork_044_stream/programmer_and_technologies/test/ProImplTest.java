@@ -1,6 +1,6 @@
-package ClassWork_044.programmer_and_technologies.test;
+package ClassWork_044_stream.programmer_and_technologies.test;
 
-import ClassWork_044.programmer_and_technologies.model.Programmer;
+import ClassWork_044_stream.programmer_and_technologies.model.Programmer;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

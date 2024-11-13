@@ -1,4 +1,4 @@
-package ClassWork_044.programmer_and_technologies.model;
+package ClassWork_044_stream.programmer_and_technologies.model;
 
 import java.util.List;
 import java.util.Objects;

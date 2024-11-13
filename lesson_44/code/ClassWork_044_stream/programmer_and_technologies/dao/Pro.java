@@ -1,6 +1,6 @@
-package ClassWork_044.programmer_and_technologies.dao;
+package ClassWork_044_stream.programmer_and_technologies.dao;
 
-import ClassWork_044.programmer_and_technologies.model.Programmer;
+import ClassWork_044_stream.programmer_and_technologies.model.Programmer;
 
 import java.util.List;
 
@@ -15,5 +15,5 @@ public interface Pro {
     void printTechnologiesByFrequencySorted(List<Programmer> programmers);
 
     void printTechnologiesRating(List<Programmer> programmers);
-
+    void printMostSkilledProgrammers(List<Programmer> programmers);
 }
