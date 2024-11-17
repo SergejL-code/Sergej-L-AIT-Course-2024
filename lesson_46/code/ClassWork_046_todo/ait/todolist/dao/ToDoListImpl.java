@@ -1,7 +1,9 @@
 package ClassWork_046_todo.ait.todolist.dao;
 
+import ClassWork_046_todo.ait.todolist.appl.ToDoListAppl;
 import ClassWork_046_todo.ait.todolist.model.Task;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -66,5 +68,41 @@ private int quantity;//Хранит текущее количество зада
     @Override
     public int quantity() {
         return quantity;
+    }
+
+    @Override
+    public void saveTasks(String fileName) {
+        List<Task> taskList = getAllTasks();
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(ToDoListAppl.FILE_NAME))) {
+            oos.writeObject(taskList);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void loadTasks(String fileName) {
+
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(ToDoListAppl.FILE_NAME))) {
+            List<Task> readTask = (List<Task>) ois.readObject();
+            quantity = readTask.size();
+            System.out.println("List of tasks:");
+            int taskNumber = 0;
+            for (Task t: readTask ) {
+                System.out.println((taskNumber++ + 1) + ". " + t.getTask() + ", data: " + t.getDate()) ;
+                // taskNumber++;
+            }
+            tasks = readTask;
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }

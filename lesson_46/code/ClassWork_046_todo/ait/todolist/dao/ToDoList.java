@@ -33,5 +33,6 @@ public interface ToDoList {
     Параметры: Нет параметров.
     Возвращает: int, представляющий количество задач.*/
     int quantity();
-
+void saveTasks(String fileName);
+void loadTasks(String fileName);
 }
