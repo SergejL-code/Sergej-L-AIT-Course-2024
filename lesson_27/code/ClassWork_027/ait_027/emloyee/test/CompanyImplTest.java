@@ -38,7 +38,7 @@ class CompanyImplTest {
     void addEmployeeTest() {
         //check size
         assertEquals(4, company.quantity());
-        //can#t add null
+        //can't add null
         assertFalse(company.addEmployee(null));
         //can't add duplicate
         assertFalse(company.addEmployee(emp[1]));

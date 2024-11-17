@@ -12,54 +12,54 @@
       <sourceFolder url="file://$MODULE_DIR$/HomeWork/lesson4/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWork/lesson5/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_04/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_05/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_06/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_07/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_08/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_09/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_10/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyMethod_and_Class/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_11/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_12/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_13/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_14/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_15/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_16/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_17/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_18/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/wiederholung/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_19/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_20/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_21/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_22/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_24/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_25/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_23_24/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_26/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_27/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Marathon/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_28/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_28/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_29/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_30/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_31/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_32/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_33/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/BüroWithEnum/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_34/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_35/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_36/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Fremd/Fremd_36/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_37/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_38/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_39/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_40/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_41/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_42/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_43/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_44/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_45 _input_output/code" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_46/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_05_условия, логические выражения/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_06_тернарный_оператор_switch_case/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_07_циклы_while_и_do_while/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_08_циклы_условия_вложенные_циклы/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_10_массивы_и_цикл_for/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_11_массивы_заполнение_и_поиск_использование_датчика_случайных_чисел/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_12_статические_методы_для_работы_с_массивами_вынос_ методов_в_ класс_ и_ их_вызов/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_13_поиск_в_массиве_методом_binarySearch/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_14_сортировка_массива_bubble_selected_sort/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_15_класс_String_и_его_методы/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_16_введение_в_ООП_классы_объекты_поля_и_методы_инкапсуляция/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_17_технология_Git/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_18_абстрагирование_конструкторы_и_полиморфизм/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_19_наследование/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_20_сравнение_объектов_стандартные_методы_классов/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_21_классы-обертки_wrapper_classes/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_22_Unit_тестирование/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_23_24_приложение Library_CRUD_операции/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_25_RegEx_String_vs_StringBuilder/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_26_Интерфейсы/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_28_Выборка_элементов_из_массива_удовлетворяющих_заданному_условию_интерфейс Predicate/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_28_Выборка_элементов_из_массива_удовлетворяющих_заданному_условию_интерфейс Predicate/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_29__Generics_дженерики/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_30_Comparable_и_Comparator_для_сортировки_массива_объектов/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_31_класс_Arrays_и_его_методы/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_33_Enum_перечислимый_тип/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_34_Java_Time_API/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_35_Album_application_with_LocalDate_field/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_36_JCF_introduction_Iterator_foreach_loop_List/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_37_List_ArrayList/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_38_LinkedList/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_39_Set_HashSet/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_40ArrayList_Hach_set/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_41__TreeSet_Collections/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_42_Map_K_V_HashMap_TreeMap/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_43_StreamAPI/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_44_Stream/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_45 _input_output_Классы_InputStream_OutputStream_Классы_ObjectInputStream_ObjectOutputStream/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson_46_чтение_объектов_из_файла/code" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Fremd" />
     </content>
     <orderEntry type="inheritedJdk" />

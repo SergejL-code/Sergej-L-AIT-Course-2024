@@ -16,21 +16,6 @@ public class CompanyImpl implements Company {
         this.size = size;
     }
 
-    public Employee[] getEmployees() {
-        return employees;
-    }
-
-    public void setEmployees(Employee[] employees) {
-        this.employees = employees;
-    }
-
-    public int getSize() {
-        return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
-    }
 
     @Override
     public boolean addEmployee(Employee employee) {
